@@ -3,7 +3,7 @@ import torch
 from PIL import Image
 
 def predict(image_path):
-    resnet = models.resnet101(pretrained=True)
+    resnet = models.resnet152(pretrained=True)
 
     #https://pytorch.org/docs/stable/torchvision/models.html
     transform = transforms.Compose([
